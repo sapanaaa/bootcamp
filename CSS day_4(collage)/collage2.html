@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container { margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(4, 51, 35);
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr 0.5fr 1fr;
+        border: 3px solid yellow;
+        grid-gap: 10px;
+        
+    }
+    img {
+    
+    }
+    .img1 {
+        background-color: aqua;
+        background-image: url(tom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .img2 {
+        background-color: violet;
+        background-image: url(tom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      
+    }
+    .img3 {
+        background-color: darksalmon;
+        background-image: url(tom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .img4 {
+        background-color: saddlebrown;
+        background-image: url(tom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    .img5 {
+        background-color: darkblue;
+        background-image: url(tom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img6 {
+        background-color: peru;
+        background-image: url(tom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="img img1"></div>
+        <div class="img img2"></div>
+        <div class="img img3"></div>
+        <div class="img img4"></div>
+        <div class="img img5"></div>
+        <div class="img img6"></div>
+
+        
+       
+    </div>
+</body>
+</html>

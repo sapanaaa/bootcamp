@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abc</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: lightcoral;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            border: 10px solid hotpink;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+.wrapper {
+     width: 30%;
+    margin-bottom: 20px;
+    border: 10px solid gold;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 856px) {
+    body {
+        background-color: aqua;
+    
+    }
+    .wrapper {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 512px) {
+    body {
+        background-color: plum;
+    
+    }
+    .wrapper {
+        width: 100%;
+    }
+    
+}
+    </style>
+    <div class="container">
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+        <div class="wrapper"><img src="tom.jpg"></div>
+    </div>
+</body>
+</html>
