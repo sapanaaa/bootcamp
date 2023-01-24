@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <style>
+    body{
+        background-color:linear-gradient( to bottom,red, blue, green, white);
+
+    }
+.container{
+    background-color: brown;
+    height:200px;
+    width:2opx;
+    margin:0px auto;
+
+    
+}
+.first{
+    background-color: black;
+    width:100px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    position: relative;
+    left:200px;
+    z-index: -3;
+}
+.second{
+
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    float:left;
+    margin: 20px;
+    position: fixed;
+    left:200px;
+    z-index: -1;
+}
+    </style>
+    <body>
+        <div class="container"> 
+            <div class="first"></div>
+            <div class="second"></div>
+
+        </div>
+    </body>
+</html>
