@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container { margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(4, 51, 35);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 0.8fr;
+        border: 3px solid yellow;
+        grid-gap: 10px;
+        
+    }
+    header {
+        background-color: aqua;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .main {
+        background-color: violet;
+        grid-column-start: 2;
+        grid-column-end: 5;
+      
+    }
+    .side-bar {
+        background-color: darksalmon;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+    .content {
+        background-color: saddlebrown;
+    
+    }
+    .content1 {
+        background-color: darkblue;
+    }
+    .content2 {
+        background-color: peru;
+    }
+    footer {
+        background-color: hotpink;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+</style>
+<body>
+    <div class="container">
+        <header>i am header</header>
+        <div class="side-bar">Side bar</div>
+        <main class="main">Main</main>
+        <div class="content content1">content1</div>
+        <div class="content content2">content2</div>
+        <div class="content content3">
+            content3
+        </div><footer>footer</footer>
+       
+    </div>
+</body>
+</html>
