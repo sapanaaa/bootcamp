@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color generator</title>
+</head>
+<style>
+    body {
+        background-color: green;
+    }
+    .container { margin: 0 auto;
+        margin-top: 30px;
+        padding: 30px;
+        height: 300px;
+        width: 400px;
+        border: 6px solid black;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 255, 0.522);
+        text-align:center;
+    }
+    .circle { height: 150px;
+        width: 150px;
+        border: 2px solid black;
+        margin: 0 auto;
+        border-radius: 50%;
+
+    }
+    h2 { text-align: center;
+        font-size: 30px;
+    }
+    button {
+        text-align: center;
+        margin: 30px;
+        padding: 12px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    
+    }
+ 
+</style>
+<body>
+    <div class="container">
+        <h2>Random color generator</h2>
+        <div class="circle" id="sample"></div>
+        <div id="button"><button>Generate random color</button></div>
+    </div>
+</body>
+<script>
+    //accessing html elements
+    let colorBox = document.getElementById("sample");
+    let button = document.getElementById("button");
+    let body = document.querySelector("body");
+        button.addEventListener("click", randomColorGenerator);
+        function randomColorGenerator(){
+        let randomNumber = Math.random();
+        let hexColorCode = randomNumber.toString(16);
+        // console.log(hexColorCode);
+        hexColorCode = hexColorCode.toString(16);
+        hexColorCode = hexColorCode.substring(2,8);
+        hexColorCode = "#" + hexColorCode;
+        colorBox.style.backgroundColor= hexColorCode;
+        body.style.backgroundColor = hexColorCode;
+        }
+</script>
+</html>
