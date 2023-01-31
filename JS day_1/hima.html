@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks=[];
+       
+        for(let i=0; i<5; i++)
+    {
+       marks[i]= parseInt (prompt("enter marks"));
+    } 
+    function average(){
+        let sum = 0;
+        for(let i=0; i<marks.length; i++){
+        sum= sum+ marks[i];}
+//    console.log(sum);
+    let average = sum/marks.length;
+
+    return average;
+}
+let myavg = average();
+document.write(myavg);
+    </script>
+    
+</body>
+</html>
